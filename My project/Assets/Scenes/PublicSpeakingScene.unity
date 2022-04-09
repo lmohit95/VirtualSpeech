@@ -22294,7 +22294,7 @@ GameObject:
   - component: {fileID: 926483826}
   m_Layer: 0
   m_Name: TelePrompter_Scrolling_Text
-  m_TagString: Untagged
+  m_TagString: Scrolling_Button_Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24418,8 +24418,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 38, y: 74.6034, z: 38.9397}
-  m_Center: {x: -0.14529991, y: 37.475903, z: 17.906351}
+  m_Size: {x: 37.966328, y: 74.60341, z: 38.939705}
+  m_Center: {x: -0.1621532, y: 37.47591, z: 17.906353}
 --- !u!54 &1022327226
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29039,6 +29039,7 @@ GameObject:
   - component: {fileID: 1263183247}
   - component: {fileID: 1263183246}
   - component: {fileID: 1263183250}
+  - component: {fileID: 1263183251}
   m_Layer: 5
   m_Name: Master Controller Canvas
   m_TagString: Untagged
@@ -29140,6 +29141,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e29c399450346b2b38c2d5845aed5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1263183251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263183245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1001 &1264324415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37374,7 +37394,7 @@ GameObject:
   - component: {fileID: 1635087223}
   m_Layer: 0
   m_Name: Scrolling_Text_Canvas
-  m_TagString: Untagged
+  m_TagString: Scrolling_Text_Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50573,11 +50593,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b343cab909c84833a972aa44075fc93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.87
+      value: 4.12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b343cab909c84833a972aa44075fc93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.69
+      value: 2.625
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b343cab909c84833a972aa44075fc93, type: 3}
       propertyPath: m_LocalPosition.z
@@ -50656,6 +50676,18 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1263183250}
         m_TargetAssemblyTypeName: Master_Canvas_Controller, Assembly-CSharp
@@ -50669,18 +50701,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []

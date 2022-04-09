@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Scrolling_On_Off_Button
   - People
+  - Scrolling_Button_Text
+  - Scrolling_Text_Canvas
   layers:
   - Default
   - TransparentFX
