@@ -9602,6 +9602,7 @@ GameObject:
   - component: {fileID: 417150664}
   - component: {fileID: 417150663}
   - component: {fileID: 417150662}
+  - component: {fileID: 417150665}
   m_Layer: 5
   m_Name: Scrolling_On_Off_Button
   m_TagString: Untagged
@@ -9686,6 +9687,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 417150665}
+        m_TargetAssemblyTypeName: Scrolling_On_Of_Button_Controller, Assembly-CSharp
+        m_MethodName: updateScrollingButtonText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &417150663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9724,6 +9737,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417150660}
   m_CullTransparentMesh: 1
+--- !u!114 &417150665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417150660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebe9b7249362a475d844a3d553f34bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollingOnOffButtonText: {fileID: 1369007398}
 --- !u!1 &425037516 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5954183333963632060, guid: 292b360a4285f4116a19e9be1837ae50, type: 3}
@@ -50505,11 +50531,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b343cab909c84833a972aa44075fc93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.1
+      value: 1.87
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b343cab909c84833a972aa44075fc93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.14
+      value: 1.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b343cab909c84833a972aa44075fc93, type: 3}
       propertyPath: m_LocalPosition.z
