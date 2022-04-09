@@ -13050,6 +13050,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 579515825}
+  - component: {fileID: 579515826}
   m_Layer: 0
   m_Name: People
   m_TagString: Untagged
@@ -13073,9 +13074,22 @@ Transform:
   - {fileID: 279047332}
   - {fileID: 263341295}
   - {fileID: 782628376}
+  - {fileID: 1541018738}
   m_Father: {fileID: 828455906}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &579515826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579515824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c97b198835b6b4f1dbc443b603b2ebff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &580214893
 GameObject:
   m_ObjectHideFlags: 0
@@ -19457,7 +19471,6 @@ Transform:
   - {fileID: 1635087219}
   - {fileID: 1263183249}
   - {fileID: 579515825}
-  - {fileID: 1541018738}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35381,11 +35394,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 828455906}
+    m_TransformParent: {fileID: 579515825}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5b73d5dc6f5f94e608f8d56d03139ca1, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5b73d5dc6f5f94e608f8d56d03139ca1, type: 3}
       propertyPath: m_LocalScale.x
@@ -35401,15 +35414,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5b73d5dc6f5f94e608f8d56d03139ca1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.25
+      value: 183.28853
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5b73d5dc6f5f94e608f8d56d03139ca1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.110000014
+      value: 204.56966
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5b73d5dc6f5f94e608f8d56d03139ca1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.996
+      value: -239.93568
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5b73d5dc6f5f94e608f8d56d03139ca1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -35442,6 +35455,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5b73d5dc6f5f94e608f8d56d03139ca1, type: 3}
       propertyPath: m_Name
       value: Sitting Laughing
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5b73d5dc6f5f94e608f8d56d03139ca1, type: 3}
+      propertyPath: m_TagString
+      value: People
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b73d5dc6f5f94e608f8d56d03139ca1, type: 3}
@@ -40884,8 +40901,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1795992593}
   - component: {fileID: 1795992594}
+  - component: {fileID: 1795992595}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: People_Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40959,12 +40977,36 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1526598945}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 0
+  m_MaxValue: 50
+  m_WholeNumbers: 1
+  m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 579515826}
+        m_TargetAssemblyTypeName: People_Controller, Assembly-CSharp
+        m_MethodName: UpdatePeopleInScene
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1795992595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795992592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62ae0428805b4948957f206bddce67f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1797101410
 PrefabInstance:
   m_ObjectHideFlags: 0
