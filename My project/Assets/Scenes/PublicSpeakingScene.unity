@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 13121110}
   - component: {fileID: 13121109}
   m_Layer: 5
-  m_Name: Settings text
+  m_Name: Settings_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 19429689}
   - component: {fileID: 19429688}
   m_Layer: 5
-  m_Name: People in scene text
+  m_Name: People_In_Scene_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9602,9 +9602,8 @@ GameObject:
   - component: {fileID: 417150664}
   - component: {fileID: 417150663}
   - component: {fileID: 417150662}
-  - component: {fileID: 417150665}
   m_Layer: 5
-  m_Name: Scrolling On Off Button
+  m_Name: Scrolling_On_Off_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9675,13 +9674,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 417150660}
-        m_TargetAssemblyTypeName: scrolling_text_canvas_contoller, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1635087223}
+        m_TargetAssemblyTypeName: Scrolling_Text_Canvas_Controller, Assembly-CSharp
+        m_MethodName: DisplayScrollingTextCanvas
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9725,18 +9724,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417150660}
   m_CullTransparentMesh: 1
---- !u!114 &417150665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 417150660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f17c9acee909c491eb9f914fcc068049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &425037516 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5954183333963632060, guid: 292b360a4285f4116a19e9be1837ae50, type: 3}
@@ -14552,7 +14539,7 @@ GameObject:
   - component: {fileID: 653126666}
   - component: {fileID: 653126665}
   m_Layer: 5
-  m_Name: Exit Button
+  m_Name: Exit_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14624,8 +14611,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1263183250}
-        m_TargetAssemblyTypeName: Master_Controller_Canvas_Script, Assembly-CSharp
-        m_MethodName: CloseController
+        m_TargetAssemblyTypeName: Master_Canvas_Controller, Assembly-CSharp
+        m_MethodName: HideMasterController
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22421,7 +22408,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 926483822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3681fcf0effe6421d949ace2d55ed39f, type: 3}
+  m_Script: {fileID: 11500000, guid: 22bdfb1846387427db47956d4a20a318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 0.2
@@ -29111,7 +29098,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1263183245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd086cbdd82994d12ba5db1340ad159a, type: 3}
+  m_Script: {fileID: 11500000, guid: 10e29c399450346b2b38c2d5845aed5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1264324415
@@ -37440,7 +37427,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1635087218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57bb3118eb9cc4ff985934a85fc60c60, type: 3}
+  m_Script: {fileID: 11500000, guid: 6489c4da4eaea4cf2be37416bd1af8b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1641678595 stripped
@@ -47016,7 +47003,7 @@ GameObject:
   - component: {fileID: 2000975228}
   - component: {fileID: 2000975227}
   m_Layer: 5
-  m_Name: Scrolling text
+  m_Name: Scrolling_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50603,8 +50590,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1263183250}
-        m_TargetAssemblyTypeName: Master_Controller_Canvas_Script, Assembly-CSharp
-        m_MethodName: ShowController
+        m_TargetAssemblyTypeName: Master_Canvas_Controller, Assembly-CSharp
+        m_MethodName: DisplayMasterController
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -50632,7 +50619,7 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1263183250}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Master_Controller_Canvas_Script, Assembly-CSharp
         m_MethodName: ShowController
         m_Mode: 1
