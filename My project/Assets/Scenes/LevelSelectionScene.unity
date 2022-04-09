@@ -210,7 +210,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 16023167}
         m_TargetAssemblyTypeName: Beginner_Button_Controller, Assembly-CSharp
-        m_MethodName: loadPublicSpeakingScene
+        m_MethodName: LoadPublicSpeakingScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 16023162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a55fb6ca6cea04f3a92ffe94238cba02, type: 3}
+  m_Script: {fileID: 11500000, guid: c8c1d2b39092a461bbdee227e6b0d591, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &127420473
@@ -361,7 +361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -526,8 +526,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 314852747}
-        m_TargetAssemblyTypeName: Intermediate_Controller, Assembly-CSharp
-        m_MethodName: loadPublicSpeakingScene
+        m_TargetAssemblyTypeName: Intermediate_Button_Controller, Assembly-CSharp
+        m_MethodName: LoadPublicSpeakingScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -584,7 +584,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 314852742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a1bb46a886e2476a80b6a8f6f67f595, type: 3}
+  m_Script: {fileID: 11500000, guid: ebc5be47f2bfc487cba9fc46722eaa91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &411035961
@@ -2856,7 +2856,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2135052203}
         m_TargetAssemblyTypeName: Expert_Button_Controller, Assembly-CSharp
-        m_MethodName: loadPublicSpeakingScene
+        m_MethodName: LoadPublicSpeakingScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2913,6 +2913,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2135052198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9afc0fea6602340e3b1bec73e603a3fd, type: 3}
+  m_Script: {fileID: 11500000, guid: 10d6762fa6e0e45d189b75135672898e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
