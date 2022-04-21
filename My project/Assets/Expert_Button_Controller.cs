@@ -18,6 +18,8 @@ public class Expert_Button_Controller : MonoBehaviour
     }
 
     public void LoadPublicSpeakingScene() {
+        PlayerPrefs.SetString("speakingLevel", "expert");
+        PlayerPrefs.Save();
         SceneManager.LoadScene("PublicSpeakingScene");
     }
 }

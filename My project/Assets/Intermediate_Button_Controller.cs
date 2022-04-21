@@ -18,6 +18,8 @@ public class Intermediate_Button_Controller : MonoBehaviour
     }
 
     public void LoadPublicSpeakingScene() {
+        PlayerPrefs.SetString("speakingLevel", "intermediate");
+        PlayerPrefs.Save();
         SceneManager.LoadScene("PublicSpeakingScene");
     }
 }

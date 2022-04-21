@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Master_Canvas_Controller : MonoBehaviour
@@ -22,5 +23,9 @@ public class Master_Canvas_Controller : MonoBehaviour
 
     public void HideMasterController() {
         gameObject.SetActive(false);
+    }
+
+    public void loadLevelSelctionScene(int sceneIndex) {
+        SceneManager.LoadSceneAsync(sceneIndex);
     }
 }
