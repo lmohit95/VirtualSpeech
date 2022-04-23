@@ -8,6 +8,8 @@ TagManager:
   - People
   - Scrolling_Button_Text
   - Next_Button
+  - Teleprompter_Canvas
+  - Teleprompter_On_Text
   layers:
   - Default
   - TransparentFX
