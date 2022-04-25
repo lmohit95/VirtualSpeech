@@ -6,8 +6,16 @@ using TMPro;
 
 public class Master_Canvas_Controller : MonoBehaviour
 {
-
     private GameObject teleprompterCanvas;
+    public Transform cameraTransform;
+    public float distanceFromCamera = 1f;
+    
+    void Update() {
+        Vector3 resultingPosition = cameraTransform.position 
+            + cameraTransform.forward * distanceFromCamera;
+        transform.position = resultingPosition;
+    }
+
     public void DisplayMasterController() {
         gameObject.SetActive(true);
     }

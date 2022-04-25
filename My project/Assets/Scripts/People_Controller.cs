@@ -4,18 +4,6 @@ using UnityEngine;
 
 public class People_Controller : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void UpdatePeopleInScene(float numPeople) {
         Debug.Log(numPeople);
         if (numPeople <= 10f) {
@@ -23,5 +11,9 @@ public class People_Controller : MonoBehaviour
         } else {
             gameObject.SetActive(true);
         }
+    }
+
+    public void UpdateAnimationValues(float animationValue) {
+        Debug.Log(animationValue);
     }
 }
