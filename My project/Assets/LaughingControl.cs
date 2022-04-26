@@ -12,7 +12,6 @@ public class LaughingControl : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        //isLaughingHash = Animator.StringToHash("isLaughing");
         StartCoroutine(LaughingAnimation());
     }
    

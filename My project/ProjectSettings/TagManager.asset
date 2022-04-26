@@ -10,6 +10,11 @@ TagManager:
   - Next_Button
   - Teleprompter_Canvas
   - Teleprompter_On_Text
+  - Scrolling_Text_Canvas
+  - People1
+  - People2
+  - People3
+  - People4
   layers:
   - Default
   - TransparentFX
