@@ -8,10 +8,10 @@ using TMPro;
 public class LevelLoader : MonoBehaviour
 {
     
-    public GameObject loadingScreen;
-    public Slider slider;
-    public GameObject buttonSelectionCanvas;
-    public TextMeshProUGUI progressText;
+    //public GameObject loadingScreen;
+    //public Slider slider;
+    //public GameObject buttonSelectionCanvas;
+    //public TextMeshProUGUI progressText;
 
     void Start()
     {
@@ -23,22 +23,23 @@ public class LevelLoader : MonoBehaviour
     }
 
     private void updateUI() {
-        loadingScreen.SetActive(true);
-        buttonSelectionCanvas.SetActive(false);
+        //loadingScreen.SetActive(true);
+        //buttonSelectionCanvas.SetActive(false);
     }
 
     IEnumerator LoadAsynchronously(int sceneIndex) {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
         //updateUI();
     
-        while (!operation.isDone) {
-            float progress = Mathf.Clamp01(operation.progress / .9f);
-            Debug.Log(progress);
-            slider.value = progress;
-            progressText.SetText(progress * 100f + "%");
+        // while (!operation.isDone) {
+        //     float progress = Mathf.Clamp01(operation.progress / .9f);
+        //     Debug.Log(progress);
+        //     slider.value = progress;
+        //     progressText.SetText(progress * 100f + "%");
 
-            yield return null;
-        }
+        //     yield return null;
+        // }
+        yield return null;
     }
 
     void Update()
