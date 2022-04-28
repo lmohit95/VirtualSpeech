@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Master_Canvas_Controller : MonoBehaviour
 {
     private GameObject teleprompterCanvas;
+    private GameObject loudnessDetectorObject;
     public Transform cameraTransform;
     public float distanceFromCamera = 1f;
     
@@ -36,7 +38,10 @@ public class Master_Canvas_Controller : MonoBehaviour
         foreach (GameObject go in Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[]) {
             if (go.tag == "Teleprompter_Canvas") {
                 teleprompterCanvas = go;
+            } else if (go.tag == "Loudness_Detector_Object") {
+                loudnessDetectorObject = go;
             }
+
         }   
 
         // Hiding/Showing Teleprompter based on teleprompter_on_off_button
