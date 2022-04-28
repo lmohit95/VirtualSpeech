@@ -11,13 +11,28 @@ public class Phrase_Detection : MonoBehaviour
 
     void Start() {
         Debug.Log("Phrase Detection: Start");
-        keywords.Add("delete", () => {
-            Debug.Log("Phrase Detection: destroy");
-            Destroy(gameObject);
-        });
+        AddLightKeywords(keywords);
+        AddAnimationKeywords(keywords);
+        AddStandUpKeywords(keywords);
         keywordRecognizer = new KeywordRecognizer(keywords.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
         keywordRecognizer.Start();
+    }
+
+    void AddAnimationKeywords(Dictionary<string, System.Action> keywords) {
+        keywords.Add("hello everyone", SwitchToIdleState);
+        keywords.Add("hi everyone", SwitchToIdleState);
+    }
+
+    void AddLightKeywords(Dictionary<string, System.Action> keywords) {
+        keywords.Add("lights off", SwitchOffLights);
+        keywords.Add("off the lights", SwitchOffLights);
+        keywords.Add("lights on", SwitchOnLights);
+        keywords.Add("on the lights", SwitchOnLights);
+    }
+
+    void AddStandUpKeywords(Dictionary<string, System.Action> keywords) {
+        keywords.Add("stand up", StandUp);
     }
 
     private void KeywordRecognizer_OnPhraseRecognized(PhraseRecognizedEventArgs args) {
@@ -26,6 +41,31 @@ public class Phrase_Detection : MonoBehaviour
         if (keywords.TryGetValue(args.text, out keywordAction)) {
             keywordAction.Invoke();
         }
+    }
+
+    private void SwitchOffLights() {
+       GameObject[] lights = GameObject.FindGameObjectsWithTag("Light");
+       foreach (GameObject light in lights) {
+           light.SetActive(false);
+       }
+    }
+
+    private void SwitchOnLights() {       
+       foreach (GameObject go in Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[]) {
+           if (go.tag == "Light") {
+               go.SetActive(true);
+           }
+       }
+    }
+
+    // Some people can switch to idle state
+    private void SwitchToIdleState() {
+
+    }
+
+    // ask 1 person to standup
+    private void StandUp() {
+
     }
 }
 
