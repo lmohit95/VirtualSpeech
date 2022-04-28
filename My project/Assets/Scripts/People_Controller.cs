@@ -9,12 +9,9 @@ public class People_Controller : MonoBehaviour
     public GameObject people2;
     public GameObject people3;
     public GameObject people4;
+    //Animator animator;
 
     void Start() {
-        /*people1 = GameObject.FindGameObjectWithTag("people1");
-        people2 = GameObject.FindGameObjectWithTag("people2");
-        people3 = GameObject.FindGameObjectWithTag("people3");
-        people4 = GameObject.FindGameObjectWithTag("people4");*/
     }
 
     public void UpdatePeopleInScene(float numPeople) {
