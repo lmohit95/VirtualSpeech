@@ -5,28 +5,38 @@ using UnityEngine;
 public class SittingClappingControl : MonoBehaviour
 {
     Animator animator;
-    public int sittingAnimationTime;
-    public int clappingAnimationTime;
+    float blend = 0.0f;
+    public float increase_by = 0.02f;
+    public float decrease_by = 0.03f;
+    //int blendHash;
+    int flag = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        // set reference for animator
         animator = GetComponent<Animator>();
-        //isLaughingHash = Animator.StringToHash("isLaughing");
-        StartCoroutine(ClappingAnimation());
+        //blendHash = Animator.StringToHash("Blend");
     }
-   
-    public IEnumerator ClappingAnimation(){
-        while (true)
-         {
-            //Debug.Log("started" + Time.time);
-            animator.SetBool("isSitting", false);
-            animator.SetBool("isClapping", true);
-            yield return new WaitForSeconds(sittingAnimationTime);
-            //Debug.Log("finished" + Time.time);
-            animator.SetBool("isSitting", true);
-            animator.SetBool("isClapping", false);
-            yield return new WaitForSeconds(clappingAnimationTime);
-         }
+    void Update() {
+            if (flag == 0){
+                if (blend < 1.0f)
+                {
+                    blend += Time.deltaTime * increase_by;
+                }
+                if (blend >= 1.0f)
+                {
+                    flag = 1;
+                }
+                animator.SetFloat("Blend", blend);
+            }
+            else{
+                blend -= Time.deltaTime * decrease_by;
+                if (blend <= 0.0f){
+                    flag = 0;
+                }
+                animator.SetFloat("Blend", blend);
+            }
+            
     }
 }
