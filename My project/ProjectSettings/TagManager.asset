@@ -21,6 +21,7 @@ TagManager:
   - Leonard
   - Previous_Button
   - LoudnessDetectionCanvas
+  - Close_Teleprompter_Button
   layers:
   - Default
   - TransparentFX

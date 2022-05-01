@@ -34,11 +34,8 @@ public class Master_Canvas_Controller : MonoBehaviour
 
     public void HideMasterControllerAndShowTeleprompterController() {        
         // Getting reference of teleprompter_on_off_button
-        TextMeshProUGUI teleprompterText 
-            = GameObject.FindGameObjectWithTag("Teleprompter_On_Text").GetComponent<TextMeshProUGUI>();
-                    
-        // Hiding Master Controller
-        gameObject.SetActive(false);
+        // TextMeshProUGUI teleprompterText 
+        //     = GameObject.FindGameObjectWithTag("Teleprompter_On_Text").GetComponent<TextMeshProUGUI>();                        
 
         List<GameObject> objectsInScene = new List<GameObject>();
         foreach (GameObject go in Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[]) {
@@ -51,23 +48,25 @@ public class Master_Canvas_Controller : MonoBehaviour
             }
         }   
 
-        // Hiding/Showing Teleprompter based on teleprompter_on_off_button
-        if (teleprompterText.text == "OFF") {
-            teleprompterCanvas.SetActive(true);
+        // // Hiding/Showing Teleprompter based on teleprompter_on_off_button
+        // if (teleprompterText.text == "OFF") {
+        //     teleprompterCanvas.SetActive(true);
+        //     FindObjectOfType<DialogueTrigger>().TriggerDialogue();
+        // } else {
+        //     teleprompterCanvas.SetActive(false);
+        // }        
+
+        // Display Loudness Detector
+        Toggle toggle = GameObject.FindGameObjectWithTag("Scrolling_On_Off_Button").GetComponent<Toggle>();
+        if (toggle.isOn) {
+            teleprompterCanvas.SetActive(true);            
             FindObjectOfType<DialogueTrigger>().TriggerDialogue();
         } else {
             teleprompterCanvas.SetActive(false);
-        }        
+        }
 
-        // // Display Loudness Detector
-        // Toggle toggle = GameObject.FindGameObjectWithTag("Loudness_Detection_Checkbox").GetComponent<Toggle>();
-        // if (toggle.isOn) {
-        //     loudnessDetectionCanvas.SetActive(true);            
-        //     loudnessDetectorObject.SetActive(true);
-        // } else {
-        //     loudnessDetectionCanvas.SetActive(false);
-        //     loudnessDetectorObject.SetActive(false);
-        // }
+        // Hiding Master Controller
+        gameObject.SetActive(false);
     }
 
     public void loadLevelSelctionScene(int sceneIndex) {
