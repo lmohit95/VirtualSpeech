@@ -59,4 +59,9 @@ public class DialogueManager : MonoBehaviour
         //nextButton.SetActive(false);
         Debug.Log("No more sentences");
     }
+
+    public void HideTeleprompterController() {
+        GameObject closeTeleprompter = GameObject.FindGameObjectWithTag("Close_Teleprompter_Button");
+        closeTeleprompter.SetActive(false);
+    }
 }
