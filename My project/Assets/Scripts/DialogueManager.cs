@@ -15,13 +15,13 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         //sentences = new Queue<string>();
-        sentences = new List<string>();
+        //sentences = new List<string>();
     }
 
     public void StartDialogue(Dialogue dialogue) {
         Debug.Log("Starting conversation with: " + dialogue.name);
+        sentences = new List<string>();
         nameText.text = dialogue.name;
-        sentences.Clear();
 
         foreach (string sentence in dialogue.sentences) {
             //sentences.Enqueue(sentence);
@@ -29,12 +29,12 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void DisplayNextSentence() {
-        sentenceIndex++;
-        if (sentenceIndex >= sentences.Count) {
+    public void DisplayNextSentence() {        
+        if (sentenceIndex + 1 >= sentences.Count) {
             EndDialogue();
             return;
         }
+        sentenceIndex++;
 
         //string sentence = sentences.Dequeue();        
         string sentence = sentences[sentenceIndex];        
@@ -42,11 +42,11 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Sentence: " + sentence);        
     }
 
-    public void DisplayPreviousSentence() {
-        sentenceIndex--;
-        if (sentenceIndex <= 0) {
+    public void DisplayPreviousSentence() {        
+        if (sentenceIndex - 1 <= 0) {
             return;
         }
+        sentenceIndex--;
 
         //string sentence = sentences.Dequeue();        
         string sentence = sentences[sentenceIndex];        
@@ -56,7 +56,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue() {
         GameObject nextButton = GameObject.FindGameObjectWithTag("Next_Button");
-        nextButton.SetActive(false);
+        //nextButton.SetActive(false);
         Debug.Log("No more sentences");
     }
 }

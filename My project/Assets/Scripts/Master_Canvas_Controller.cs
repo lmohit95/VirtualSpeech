@@ -52,6 +52,7 @@ public class Master_Canvas_Controller : MonoBehaviour
         // Hiding/Showing Teleprompter based on teleprompter_on_off_button
         if (teleprompterText.text == "OFF") {
             teleprompterCanvas.SetActive(true);
+            FindObjectOfType<DialogueTrigger>().TriggerDialogue();
         } else {
             teleprompterCanvas.SetActive(false);
         }        

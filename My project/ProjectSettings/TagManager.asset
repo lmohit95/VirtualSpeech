@@ -19,6 +19,7 @@ TagManager:
   - Loudness_Detector_Object
   - Light
   - Leonard
+  - Previous_Button
   layers:
   - Default
   - TransparentFX
