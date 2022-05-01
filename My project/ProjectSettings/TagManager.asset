@@ -20,6 +20,7 @@ TagManager:
   - Light
   - Leonard
   - Previous_Button
+  - LoudnessDetectionCanvas
   layers:
   - Default
   - TransparentFX

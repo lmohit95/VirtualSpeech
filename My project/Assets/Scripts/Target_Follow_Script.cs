@@ -19,7 +19,7 @@ public class Target_Follow_Script : MonoBehaviour
              + cameraTransform.right * rightDistanceFromCamera
              + cameraTransform.up * topDistanceFromCamera;
         transform.position = resultingPosition;
-        Debug.Log(transform.position);
+        //Debug.Log(transform.position);
         // Need to bound position 
         //transform.LookAt(target);
         //transform.Rotate(x, y, z);

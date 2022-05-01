@@ -9,6 +9,7 @@ public class Master_Canvas_Controller : MonoBehaviour
 {
     private GameObject teleprompterCanvas;
     private GameObject loudnessDetectorObject;
+    private GameObject loudnessDetectionCanvas;
     public Transform cameraTransform;
     public float distanceFromCamera = 1f;
     public int x;
@@ -45,8 +46,9 @@ public class Master_Canvas_Controller : MonoBehaviour
                 teleprompterCanvas = go;
             } else if (go.tag == "Loudness_Detector_Object") {
                 loudnessDetectorObject = go;
+            } else if (go.tag == "LoudnessDetectionCanvas") {
+                loudnessDetectionCanvas = go;
             }
-
         }   
 
         // Hiding/Showing Teleprompter based on teleprompter_on_off_button
@@ -56,6 +58,16 @@ public class Master_Canvas_Controller : MonoBehaviour
         } else {
             teleprompterCanvas.SetActive(false);
         }        
+
+        // // Display Loudness Detector
+        // Toggle toggle = GameObject.FindGameObjectWithTag("Loudness_Detection_Checkbox").GetComponent<Toggle>();
+        // if (toggle.isOn) {
+        //     loudnessDetectionCanvas.SetActive(true);            
+        //     loudnessDetectorObject.SetActive(true);
+        // } else {
+        //     loudnessDetectionCanvas.SetActive(false);
+        //     loudnessDetectorObject.SetActive(false);
+        // }
     }
 
     public void loadLevelSelctionScene(int sceneIndex) {
