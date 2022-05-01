@@ -18,6 +18,7 @@ TagManager:
   - Loudness_Detection_Checkbox
   - Loudness_Detector_Object
   - Light
+  - Leonard
   layers:
   - Default
   - TransparentFX

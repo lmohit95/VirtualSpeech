@@ -65,7 +65,8 @@ public class Phrase_Detection : MonoBehaviour
 
     // ask 1 person to standup
     private void StandUp() {
-
+        Animator animator = GameObject.FindGameObjectWithTag("Leonard").GetComponent<Animator>();
+        animator.SetFloat("Blend", 0.8f);
     }
 }
 
