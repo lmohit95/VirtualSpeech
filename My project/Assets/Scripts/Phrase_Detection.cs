@@ -32,7 +32,7 @@ public class Phrase_Detection : MonoBehaviour
     }
 
     void AddStandUpKeywords(Dictionary<string, System.Action> keywords) {
-        keywords.Add("stand up", StandUp);
+        keywords.Add("thank you", StandUp);
     }
 
     private void KeywordRecognizer_OnPhraseRecognized(PhraseRecognizedEventArgs args) {
@@ -65,8 +65,14 @@ public class Phrase_Detection : MonoBehaviour
 
     // ask 1 person to standup
     private void StandUp() {
-        Animator animator = GameObject.FindGameObjectWithTag("Leonard").GetComponent<Animator>();
-        animator.SetFloat("Blend", 0.8f);
+        Debug.Log("standup function started");
+        GameObject[] peoples = GameObject.FindGameObjectsWithTag("People");
+        foreach (GameObject people in peoples) {
+            Animator animator = people.GetComponent<Animator>();
+            animator.SetFloat("Blend", 0.95f);
+        }
+        Debug.Log("standup function ended");
+        
     }
 }
 

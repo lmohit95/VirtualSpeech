@@ -8,7 +8,6 @@ public class StandingClappingControl : MonoBehaviour
     float blend = 0.0f;
     public float increase_by = 0.02f;
     public float decrease_by = 0.03f;
-    //int blendHash;
     int flag = 0;
 
     // Start is called before the first frame update
@@ -16,15 +15,18 @@ public class StandingClappingControl : MonoBehaviour
     {
         // set reference for animator
         animator = GetComponent<Animator>();
-        //blendHash = Animator.StringToHash("Blend");
     }
     void Update() {
+            float blendValue = animator.GetFloat("Blend");
+            if (blendValue == 0.95f) {
+                return;
+            }
             if (flag == 0){
-                if (blend < 1.0f)
+                if (blend < 0.6f)
                 {
                     blend += Time.deltaTime * increase_by;
                 }
-                if (blend >= 1.0f)
+                if (blend >= 0.6f)
                 {
                     flag = 1;
                 }
