@@ -61,7 +61,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void HideTeleprompterController() {
-        GameObject closeTeleprompter = GameObject.FindGameObjectWithTag("Close_Teleprompter_Button");
+        GameObject closeTeleprompter = GameObject.FindGameObjectWithTag("Teleprompter_Canvas");
         closeTeleprompter.SetActive(false);
     }
 }
