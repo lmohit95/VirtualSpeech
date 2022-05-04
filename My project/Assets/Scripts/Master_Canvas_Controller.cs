@@ -11,15 +11,26 @@ public class Master_Canvas_Controller : MonoBehaviour
     private GameObject loudnessDetectorObject;
     private GameObject loudnessDetectionCanvas;
     public Transform cameraTransform;
-    public float distanceFromCamera = 1f;
+    public float forwardDistanceFromCamera = 3f;
+    public float rightDistanceFromCamera = 1f;
+    public float topDistanceFromCamera = 1f;
     public int x;
     public int y;
     public int z;
+
+    void Start() {
+        //transform.Rotate(x, y, z);
+    }
     
     void Update() {
         // Vector3 resultingPosition = cameraTransform.position 
         //     + cameraTransform.forward * distanceFromCamera;
         // transform.position = resultingPosition;
+        //transform.LookAt(cameraTransform);
+        
+        Vector3 resultingPosition = cameraTransform.position 
+             + cameraTransform.forward * forwardDistanceFromCamera;
+        transform.position = resultingPosition;        
         transform.LookAt(cameraTransform);
         transform.Rotate(x, y, z);
     }
