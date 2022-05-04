@@ -5,9 +5,9 @@ using UnityEngine;
 public class Follow_Camera : MonoBehaviour
 {
     public Transform cameraTransform;
-    public float forwardDistanceFromCamera = 3f;
-    public float rightDistanceFromCamera = 1f;
-    public float topDistanceFromCamera = 1f;
+    public float forwardDistanceFromCamera = 0f;
+    public float rightDistanceFromCamera = 0f;
+    public float topDistanceFromCamera = 0f;
     public int x;
     public int y;
     public int z;
