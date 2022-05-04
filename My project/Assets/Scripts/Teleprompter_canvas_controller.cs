@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Teleprompter_canvas_controller : MonoBehaviour
 {
+
     public void ShowTeleprompterCanvas() {
         gameObject.SetActive(true);
     }
