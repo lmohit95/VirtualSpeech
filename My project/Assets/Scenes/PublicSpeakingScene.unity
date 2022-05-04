@@ -15878,15 +15878,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f632f201e8835b6498fd7eac47d09be5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f632f201e8835b6498fd7eac47d09be5, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f632f201e8835b6498fd7eac47d09be5, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.6
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f632f201e8835b6498fd7eac47d09be5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18258,7 +18258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -58000,15 +58000,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880241830}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec538461243ab4a609b52f72df9f30b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTransform: {fileID: 847955781}
   forwardDistanceFromCamera: 2.5
-  rightDistanceFromCamera: 1
-  topDistanceFromCamera: 1
+  rightDistanceFromCamera: -2.2
+  topDistanceFromCamera: 1.2
   x: 0
   y: 180
   z: 0
@@ -67794,15 +67794,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b343cab909c84833a972aa44075fc93, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b343cab909c84833a972aa44075fc93, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b343cab909c84833a972aa44075fc93, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b343cab909c84833a972aa44075fc93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68014,15 +68014,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142989337}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec538461243ab4a609b52f72df9f30b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTransform: {fileID: 847955781}
   forwardDistanceFromCamera: 2.5
-  rightDistanceFromCamera: 1
-  topDistanceFromCamera: 1
+  rightDistanceFromCamera: 2.2
+  topDistanceFromCamera: 1.1
   x: 0
   y: 180
   z: 0
